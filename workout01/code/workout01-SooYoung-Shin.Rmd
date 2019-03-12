@@ -1,0 +1,9 @@
+---
+title: "workout01-SooYoung-Shin.Rmd"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
