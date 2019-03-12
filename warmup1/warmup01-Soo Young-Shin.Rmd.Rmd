@@ -1,4 +1,4 @@
-      \usepackage{mathtools}
+
 ---
 title: "Warm Up#1"
 output: github_document
