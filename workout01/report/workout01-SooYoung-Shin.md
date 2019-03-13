@@ -20,7 +20,7 @@ Tony Pesta, a site expert at BlueManHoop for the Golden State Warriors stated th
 Analysis
 --------
 
-Let's see \_effective shooting- data of five players.
+We're going to look *effective shooting* data of five players.
 
 **Table1: 2PT Effective Shooting % by Player**
 
