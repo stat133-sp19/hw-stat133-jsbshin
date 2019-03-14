@@ -20,7 +20,7 @@ library(gridExtra)
 The Golden State Warriors, who have the best splash duo of Curry and Tomson, have signed superstar Kevin Durant ahead of the 2016-2017 season. Golden State was the best three-point team without Durant. Due to Durant's joining, Golden State had Fantastic Four with Curry, Tomson, Green, and Durant. Golden State won the 2016-2017 season by defeating LeBron James's Cleveland through outstanding performance of fantastic four. In fact, Iguodala and Green have some bad shooting skills. Instead, they have excellent defense and high bq. But how could Golden Stay be the best shooting team? Let's analyze the shooting data for Curry, Tomson, Durant, Green, and Iguodala this season. Based on this, let's see how they became the best shooting team in NBA.
 
 ```{r out.width='80%', echo = FALSE, fig.align= 'center'}
-knitr::include_graphics("../images/image.1.jpg")
+knitr::include_graphics("../images/image6.jpg")
 ```
 
 
@@ -78,7 +78,7 @@ The table above shows that Golden State has two of the best three-point shooters
 
 
 ```{r out.width='80%', echo = FALSE, fig.align= 'center'}
-knitr::include_graphics("../images/image3.jpg")
+knitr::include_graphics("../images/image.1.jpg")
 ```
 
 
@@ -108,12 +108,15 @@ knitr::include_graphics("../images/gsw-shot-charts.png")
 This chart shows that the position of the shoot attempts and success of each players. Green is success of shots and red is fail of shots. Especially for curry's shot chart, there are lots of green dots behind the 3pt line. It shows that why Stephen Curry is best 3pt shooter in NBA.
 
 
+
+##Conclusion
+
 ```{r out.width='80%', echo = FALSE, fig.align= 'center'}
 knitr::include_graphics("../images/image4.jpg")
 ```
 
-##Conclusion
 
 As you can see from the charts and tables, the Golden State Warriors are nba's best shooting team in NBA.The 200 3pt shoots made mean that the best 3-point shooter in the league.Curry, who made 280 points,is the superstar and the best three-point shooter in the league. Thompson, who also made 246 3-point shots here, supports Curry. Both of them showed a high effective shooting rate of 46.7% and 47.1% at the same time as many shoot successes. Another superstar, Durant, showed a high shooting success rate of 54%, regardless of the inside or outside field goals. Green and Iguodala, who do not have great offensive ability, but who had strong defensive ablility, support the team with a good effective shooting rate. The characteristics of these players were well combined and warriors was able to win the 2016-2017 season. the Warriors will be the strongest contenders in the future.
+
 
 
