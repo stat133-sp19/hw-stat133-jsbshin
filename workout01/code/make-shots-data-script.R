@@ -2,7 +2,7 @@
 #title: Make-Shots-Data-Script.R
 #description: This script is deal with data preparation for create a csv data file shots-data.csv. 
 #inputs: andre-iguodala.csv, draymond-green.csv, kevin-durant.csv, klay-thompson.csv, stephen-curry.csv
-#outputs: andre-iguodala-summary.txt, draymond-green-summary.txt, kevin-durnat-summary, klay-thompson-summary, shots-data-summary, stephen-curry-summary
+#outputs: andre-iguodala-summary.txt, draymond-green-summary.txt, kevin-durnat-summary.txt, klay-thompson-summary.txt, shots-data-summary.txt, stephen-curry-summary.txt
 
 library(dplyr)
 library(plyr)
