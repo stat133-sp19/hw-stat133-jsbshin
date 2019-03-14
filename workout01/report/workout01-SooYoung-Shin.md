@@ -32,7 +32,7 @@ We're going to look *effective shooting* data of five players.
 | Klay Thompson  |         640|        329|    0.5140625|
 | Draymond Green |         346|        171|    0.4942197|
 
-As you can see, Kevin Durant had the most 2 pt field goals and Iguodala had the lowest 2 pt field goals. From this data, we can see that Kevin Durant used his height to make a highly percentage of 2 pt field goals. And Iguodala had the lowest score, but he had the highest percentage because he usually attempted the shot when he had a perfect chance. And the team's main scorer Curry and Thopson, the splash duo, also scored a lot and had a good field goals percentage. Even the Green, who has poor shooting ability, has made 49% of 2pt field goals rate. It shows that how good the Warrios's 2pt filed goal rate.
+As you can see, Kevin Durant had the most 2 pt field goals and Iguodala had the lowest 2 pt field goals. From this data, we can see that Kevin Durant used his height to make a highly percentage of 2 pt field goals. And Iguodala had the lowest score, but he had the highest percentage because he usually attempted the shot when he had a perfect chance. And the team's main scorer Curry and Thopson, the splash duo, also scored a lot and had a good field goals percentage. Even the Green, who has poor shooting ability, has made 49% of 2pt field goals rate. It shows that how good the Warrios's 2pt filed goal rate is.
 
 <img src="../images/image2.jpg" width="80%" style="display: block; margin: auto;" />
 
