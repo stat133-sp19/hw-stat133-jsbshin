@@ -68,9 +68,14 @@ Durant tried 915 shots and made 495 shots, showing the highest effective shootin
 
 This chart shows that the position of the shoot attempts and success of each players. Green is success of shots and red is fail of shots. Especially for curry's shot chart, there are lots of green dots behind the 3pt line. It shows that why Stephen Curry is best 3pt shooter in NBA.
 
-Conclusion
-----------
+**Conclusion**
+--------------
 
 <img src="../images/image4.jpg" width="80%" style="display: block; margin: auto;" />
 
 As you can see from the charts and tables, the Golden State Warriors are nba's best shooting team in NBA.The 200 3pt shoots made mean that the best 3-point shooter in the league.Curry, who made 280 points,is the superstar and the best three-point shooter in the league. Thompson, who also made 246 3-point shots here, supports Curry. Both of them showed a high effective shooting rate of 46.7% and 47.1% at the same time as many shoot successes. Another superstar, Durant, showed a high shooting success rate of 54%, regardless of the inside or outside field goals. Green and Iguodala, who do not have great offensive ability, but who had strong defensive ablility, support the team with a good effective shooting rate. The characteristics of these players were well combined and warriors was able to win the 2016-2017 season. the Warriors will be the strongest contenders in the future.
+
+**Reference**
+-------------
+
+-   [Golden State Warriors: Who is the best shooter on the team?](https://bluemanhoop.com/2018/09/27/golden-state-warriors-best-shooter-team/)
