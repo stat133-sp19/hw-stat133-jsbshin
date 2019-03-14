@@ -1,3 +1,13 @@
+
+#title: Make-Shot-charts-Script.R
+#description: This script is  create a pdf and png file of players shot charts. 
+#inputs: andre-iguodala.csv, draymond-green.csv, kevin-durant.csv, klay-thompson.csv, stephen-curry.csv, nba-court.jpg
+#outputs: klay-thompson-shot-chart.pdf, kevin-durant-shot-chart.pdf, stephen-curry-shot-chart.pdf, draymond-green-shot-chart.pdf, andre-iguodala-shot-chart.pdf, gsw-shot-charts.pdf, gsw-shot-charts.png 
+
+
+
+
+
 library(ggplot2)
 library(dplyr)
 library(jpeg)
