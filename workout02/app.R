@@ -46,10 +46,10 @@ ui <- fluidPage(
    hr(),
    
       # Show a plot of savings and data table
-   h4("Timelines"),
+   h4(strong("Timelines")),
    plotOutput("distPlot"),
    
-   h4("Balances"),
+   h4(strong("Balances")),
    verbatimTextOutput("dataTable")
 )
 
