@@ -18,10 +18,12 @@ ui <- fluidPage(
      column(4,
             sliderInput(inputId = "initial",
                         label = "Initial Amount",
-                        min = 1, max = 100000, value = 1000, step = 500),
+                        min = 1, max = 100000, value = 1000, step = 500,
+                        pre = '$'),
             sliderInput(inputId = "annual",
                         label = "Annual Contribution",
-                        min = 0, max = 50000, value = 2000, step = 500)
+                        min = 0, max = 50000, value = 2000, step = 500,
+                        pre = '$')
       ),
      
      column(4,
@@ -113,13 +115,12 @@ server <- function(input, output) {
       
      s <- ggplot(data = modalities, aes(x = year, y = value, col = modality))+
        geom_line()+
-       geom_point()+labs(x = "Year", y = "Value", title = "Growth of Investment") 
+       geom_point()+labs(x = "Year", y = "Value", title = "Three modes of investing") 
      
      
      if(input$facet == "Yes") {
-       s <- s + facet_wrap( ~ modality) + 
-         geom_area(aes(fill = modality), alpha = 0.4, show.legend = FALSE) +
-         theme_bw()
+       s <- s + geom_area(aes(fill = modality), alpha = 0.4, show.legend = TRUE) +
+         facet_wrap( ~ modality) + theme_bw()
        
        
      }
