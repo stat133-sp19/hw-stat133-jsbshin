@@ -10,35 +10,14 @@
 #   Test Package:              'Ctrl + Shift + T'
 
 
-# private auxiliary function check_prob() to test if an input prob is a valid probability
-check_prob <- function(prob) {
-  if( prob < 0 | prob >1) {
-    stop('invalid prob value')
-  }else {
-    return(TRUE)
-  }
+# private auxiliary function aux_mean() to compute the mean value
+aux_mean <- function(trials, prob) {
+  aux_mean(trial * prob)
+  return(aux_mean)
 }
 
 
-
-# private auxiliary function check_trials() to test if an input trial is a valid number
-check_trials <- function(trials) {
-  if (trials < 0) {
-    stop('invalid trial value')
-  } else {
-    return(TRUE)
-  }
+# private auxiliary function aux_variance() to compute the mean value
+aux_variance <- function(trials, prob) {
+  return(trials * prob * (1 - prob))
 }
-
-# private auxiliary function check_success() to test if an input success is a valid number
-check_success <- function(success, trial) {
- check_trials(trial)
- if (any(success != floor(success) | success < 0)){
-   stop('invalid success value')
- } else if(any(trial < success)) {
-   stop('success can not be greater than trials')
- } else {
-   return(TRUE)
- }
-}
-
