@@ -1,0 +1,44 @@
+
+# You can learn more about package authoring with RStudio at:
+#
+#   http://r-pkgs.had.co.nz/
+#
+# Some useful keyboard shortcuts for package authoring:
+#
+#   Build and Reload Package:  'Ctrl + Shift + B'
+#   Check Package:             'Ctrl + Shift + E'
+#   Test Package:              'Ctrl + Shift + T'
+
+
+# private auxiliary function check_prob() to test if an input prob is a valid probability
+check_prob <- function(prob) {
+  if( prob < 0 | prob >1) {
+    stop('invalid prob value')
+  }else {
+    return(TRUE)
+  }
+}
+
+
+
+# private auxiliary function check_trials() to test if an input trial is a valid number
+check_trials <- function(trials) {
+  if (trials < 0) {
+    stop('invalid trial value')
+  } else {
+    return(TRUE)
+  }
+}
+
+# private auxiliary function check_success() to test if an input success is a valid number
+check_success <- function(success, trial) {
+ check_trials(trial)
+ if (any(success != floor(success) | success < 0)){
+   stop('invalid success value')
+ } else if(any(trial < success)) {
+   stop('success can not be greater than trials')
+ } else {
+   return(TRUE)
+ }
+}
+

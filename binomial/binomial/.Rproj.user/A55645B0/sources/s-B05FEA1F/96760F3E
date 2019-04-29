@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556559981013.000,
+    "dirty" : false,
+    "encoding" : "ISO8859-1",
+    "folds" : "",
+    "hash" : "3747435751",
+    "id" : "96760F3E",
+    "lastKnownWriteTime" : 1556565050,
+    "last_content_update" : 1556565050883,
+    "path" : "C:/Users/Jsbshin/Desktop/hw-stat133/binomial/binomial/R/Private_checker.R",
+    "project_path" : "R/Private_checker.R",
+    "properties" : {
+        "cursorPosition" : "44,0",
+        "scrollLine" : "20"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
