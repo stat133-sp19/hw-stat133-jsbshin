@@ -31,11 +31,11 @@ check_trials <- function(trials) {
 }
 
 # private checker function check_success() to test if an input success is a valid number
-check_success <- function(success, trial) {
- check_trials(trial)
+check_success <- function(success, trials) {
+ check_trials(trials)
  if (any(success != floor(success) | success < 0)){
    stop('invalid success value')
- } else if(any(trial < success)) {
+ } else if(any(trials < success)) {
    stop('success can not be greater than trials')
  } else {
    return(TRUE)

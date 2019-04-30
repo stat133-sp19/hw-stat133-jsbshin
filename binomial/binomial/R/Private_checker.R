@@ -35,7 +35,7 @@ check_success <- function(success, trials) {
  check_trials(trials)
  if (any(success != floor(success) | success < 0)){
    stop('invalid success value')
- } else if(any(trial < success)) {
+ } else if(any(trials < success)) {
    stop('success can not be greater than trials')
  } else {
    return(TRUE)
