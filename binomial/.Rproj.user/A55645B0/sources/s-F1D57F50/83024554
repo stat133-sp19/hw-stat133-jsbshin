@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556649563646.000,
+    "dirty" : false,
+    "encoding" : "ISO8859-1",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "83024554",
+    "lastKnownWriteTime" : 1556648774,
+    "last_content_update" : 1556648774,
+    "path" : "C:/Users/Jsbshin/Desktop/hw-stat133/binomial/R/private_auxiliary.R",
+    "project_path" : "R/private_auxiliary.R",
+    "properties" : {
+        "cursorPosition" : "20,20",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
