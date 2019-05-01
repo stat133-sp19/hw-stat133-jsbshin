@@ -9,11 +9,11 @@ check_prob <- function(prob) {
 
 
 # private checker function check_trials() to test if an input trial is a valid number
-check_trials <- function(trials) {
-  if (trials < 0) {
-    stop('invalid trial value')
-  } else {
+check_trials = function(trials){
+  if(trials%%1 == 0 & trials >= 0){
     return(TRUE)
+  }else{
+    stop('invalid trials value')
   }
 }
 

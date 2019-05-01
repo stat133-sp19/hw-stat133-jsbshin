@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556687202702.000,
+    "dirty" : false,
+    "encoding" : "ISO8859-1",
+    "folds" : "",
+    "hash" : "1529876200",
+    "id" : "9E2A90DC",
+    "lastKnownWriteTime" : 1556688599,
+    "last_content_update" : 1556688599403,
+    "path" : "C:/Users/Jsbshin/Desktop/hw-stat133/binomial/tests/testthat/test-binomial.R",
+    "project_path" : "tests/testthat/test-binomial.R",
+    "properties" : {
+        "cursorPosition" : "34,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
