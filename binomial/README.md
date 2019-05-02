@@ -108,6 +108,8 @@ plot(dist)
     #> [5,]  5.5
     #> [6,]  6.7
 
+<img src="../binomial/plot1.png" width="80%" style="display: block; margin: auto;" />
+
 ``` r
 # binomial cumulative distribution
 cum <- bin_cumulative(trials = 5, prob = 0.5)
@@ -125,7 +127,7 @@ cum
 plot(cum)
 ```
 
-<img src="README-unnamed-chunk-4-1.png" width="100%" />
+<img src="README-unnamed-chunk-5-1.png" width="100%" />
 
     #> NULL
 
