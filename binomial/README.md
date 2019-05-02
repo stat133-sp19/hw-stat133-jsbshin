@@ -1,158 +1,151 @@
 
-Overview
+Workout 03: R Package binomial
+------------------------------
+
+------------------------------------------------------------------------
+
+Binomial
 --------
 
-`"binomial"` is an R package that provides functions to calculate the probability of binomial random variable. And the package also provides functions to calculte other related property of binomial random variable.
+------------------------------------------------------------------------
 
--   `bin_choose()` calculates the number of combinations in which `"k"` success can occur in `"n"` trials
+> This [R](http://www.r-project.org/) package implements functions for calculating probabilities of a Binomial random variable, with related calculations such as probability distribution, expected value, etc. \#\#\# Table of Contents \*\*\*
 
--   `bin_probability()` caculates the binomial probability of `"k"` success in `"n"` trials given `"p"` probability
+1.  [General Info](#general-info)
+2.  [Motivation](#motivation)
+3.  [Installation](#installation)
+4.  [Usage](#usage)
 
--   `bin_distribution()` list the probabality of each successe with probability `"p"` in `"n"` trials
+### General Info
 
-    -`plot()` method for a `bin_distribution()` to grphs a barplot to display a histogram of a distribution of variables
+------------------------------------------------------------------------
 
--   `bin_cumulative()` list the cumulative probabality of each successe with probability `"p"` in `"n"` trials
+`"binomial"` is a R package that provides and implements functions for calculating the probabilities of a Binomial random variable. The package includes related calculations, including probability distribution, expected value, variance, and others.
 
-    -`plot()` method for a `bin_cumulative()` to display a plot of a cumulative distribution object
+-   `bin_choose()` calculates the number of combinations in which *k* successes can occur in *n* trials.
+-   `bin_probability()` calculates the binomial probability of getting a certain number of successes in a given number of trials
+-   `bin_distribution()` returns a data frame of class `"bindis"` that returns the binomial probability distribution given a certain number of trials and probability of success
+    -   `plot.bindis()` method to display a histogram of a binomial distribution object `"bindis"`.
+-   `bin_cumulative()` returns a data frame of class `"bincum"` that returns the binomial probability distribution and cumulative distribution given a certain number of trials and probability of success
+-   `plot.bincum()` method to display a plot of a cumulative distribution object `"bincum"`.
+-   `bin_var()` creates a binomial random variable object of class `"binvar"`.
+    -   `print.binvar()` method to print the content of an object `"binvar"`.
+    -   `summary.binvar()` method to give a full summary description of an object `"binvar"`.
+-   `bin_mean` computes the mean of a binomial random variable given trials and probability
+-   `bin_variance` computes the variance of a binomial random variable given trials and probability
+-   `bin_mode` computes the mode of a binomial random variable given trials and probability
+-   `bin_skewness` computes the skewness of a binomial random variable given trials and probability
+-   `bin_kurtosis` computes the kurtosis of a binomial random variable given trials and probability
 
--   `bin_variable()`list the class binomial random variable with the named of `"trials"` and `"prob"`
+### Motivation
 
-    -`summary()`method for a `bin_variable()` ethod to give a full summary description of an object
+------------------------------------------------------------------------
 
--   `bin_mean()` calculate the mean of a binomal distribution
+This package illustrates the creation of an R package through the lens of a binomial functions.
 
--   `bin_variance()` calculate the variance of a binomal distribution
+### Installation
 
--   `bin_mode()` calculate the mode of a binomal distribution
+------------------------------------------------------------------------
 
--   `bin_skewness()` calculate the skewness of a binomal distribution
-
--   `bin_kurtosis()` calculate the kurtosis of a binomal distribution
-
-Motivation
-----------
-
-Through this package, we will learn how to make r pakages with various calculations related to binomial functions.
-
-Installation
-------------
-
-Install the development version from GitHub via the package `"devtools"`:
+Installation from GitHub with `"devtools"`:
 
 ``` r
-
-# development version from GitHub:
-#install.packages("devtools")
-
-
-# install "cointoss" (without vignettes)
-devtools::install_github("stat133-sp19/hw-stat133-jsbshin/binomial")
-
-
-# install "cointoss" (with vignettes)
-devtools::install_github("stat133-sp19/hw-stat133-jsbshin/binomial", build_vignettes = TRUE)
+# install devtools
+#install.packages("devtools") 
+# install "binomial" (without vignettes)
+#devtools::install_github("stat133-sp19/hw-stat133-rgabidoulline/tree/master/workout03/binomial")
+# install "binomial" (with vignettes)
+#devtools::install_github("stat133-sp19/hw-stat133-rgabidoulline/tree/master/workout03/binomial", build_vignettes = TRUE)
 ```
 
-Usage
------
+### Usage
+
+------------------------------------------------------------------------
 
 ``` r
 library(binomial)
-
-#the number of combinations in which k success can occur in n trials
-choose <- bin_choose(n = 5, k = 2)
-choose
-#> [1] 10
-
-
-# binomial random variable
-variable <- bin_variable(trials = 5, prob = 0.5)
-variable
-#> "Binomail variable"
-#> 
-#> Parameters
-#> - number of trials: 5 
-#> - prob of success : 0.5
-
-# binomial probability
+# k = 2 successes in n = 5 trials
+bin_choose(n = 5, k = 2)
+## [1] 10
+# probability of getting 2 successes in 5 trials
 bin_probability(success = 2, trials = 5, prob = 0.5)
-#> [1] 0.3125
+## [1] 0.3125
+# probability of 2 or less successes in 5 trials
 bin_probability(success = 0:2, trials = 5, prob = 0.5)
-#> [1] 0.03125 0.15625 0.31250
-
-# binomial distribution
-dist <- bin_distribution(trials = 5, prob = 0.5)
+## [1] 0.03125 0.15625 0.31250
+# binomial probability distribution
+dist = bin_distribution(trials = 5, prob = 0.5)
 dist
-#>   success probability
-#> 1       0     0.03125
-#> 2       1     0.15625
-#> 3       2     0.31250
-#> 4       3     0.31250
-#> 5       4     0.15625
-#> 6       5     0.03125
-
-
-# binomial ditribution plot
+##   success probability
+## 1       0     0.03125
+## 2       1     0.15625
+## 3       2     0.31250
+## 4       3     0.31250
+## 5       4     0.15625
+## 6       5     0.03125
+# plot method
 plot(dist)
 ```
 
-<img src="README-unnamed-chunk-2-1.png" width="100%" />
+![](README-unnamed-chunk-3-1.png)
 
-    #>      [,1]
-    #> [1,]  0.7
-    #> [2,]  1.9
-    #> [3,]  3.1
-    #> [4,]  4.3
-    #> [5,]  5.5
-    #> [6,]  6.7
-
+    ##      [,1]
+    ## [1,]  0.7
+    ## [2,]  1.9
+    ## [3,]  3.1
+    ## [4,]  4.3
+    ## [5,]  5.5
+    ## [6,]  6.7
     # binomial cumulative distribution
-    cum <- bin_cumulative(trials = 5, prob = 0.5)
-    cum
-    #>   success probability cumualtive
-    #> 1       0     0.03125    0.03125
-    #> 2       1     0.15625    0.18750
-    #> 3       2     0.31250    0.50000
-    #> 4       3     0.31250    0.81250
-    #> 5       4     0.15625    0.96875
-    #> 6       5     0.03125    1.00000
+    cumdist = bin_cumulative(trials = 5, prob = 0.5)
+    cumdist
+    ##   success probability cumualtive
+    ## 1       0     0.03125    0.03125
+    ## 2       1     0.15625    0.18750
+    ## 3       2     0.31250    0.50000
+    ## 4       3     0.31250    0.81250
+    ## 5       4     0.15625    0.96875
+    ## 6       5     0.03125    1.00000
+    # plot method
+    plot(cumdist)
 
+![](README-unnamed-chunk-3-2.png)
 
-    # binomial cumulative distribution plot
-    plot(cum)
-
-<img src="README-unnamed-chunk-2-2.png" width="100%" />
-
-    #> NULL
-
-
-    # binomial random variable summary statistics
-    bin1 <- bin_variable(trials = 10, p = 0.3) 
-    binsum1 <- summary(bin1) 
-    binsum1
-    #> "Summary Binomial" 
-    #> 
-    #> Parameters 
-    #> - number of trials: 10 
-    #> - prob of success : 0.3 
-    #> 
-    #> Measures 
-    #> - mean    : 3 
-    #> - variance: 2.1 
-    #> - mode    : 3 
-    #> - skewness: 0.2760262 
-    #> - kurtosis: -0.1238095
-
-
-    # summary measures
-    bin_mean(10, 0.3) 
-    #> [1] 3
-    bin_variance(10, 0.3) 
-    #> [1] 2.1
-    bin_mode(10, 0.3) 
-    #> [1] 3
-    bin_skewness(10, 0.3) 
-    #> [1] 0.2760262
-    bin_kurtosis(10, 0.3) 
-    #> [1] -0.1238095
+    ## NULL
+    # binomial random variable
+    X = bin_variable(trials = 10, p = 0.3)
+    X
+    ## "Binomail variable"
+    ## 
+    ## Parameters
+    ## - number of trials: 10 
+    ## - prob of success : 0.3
+    # summary method
+    summary(X)
+    ## "Summary Binomial" 
+    ## 
+    ## Parameters 
+    ## - number of trials: 10 
+    ## - prob of success : 0.3 
+    ## 
+    ## Measures 
+    ## - mean    : 3 
+    ## - variance: 2.1 
+    ## - mode    : 3 
+    ## - skewness: 0.2760262 
+    ## - kurtosis: -0.1238095
+    # mean of distribution with trials = 10 and prob = 0.3
+    bin_mean(10, 0.3)
+    ## [1] 3
+    # variance of distribution with trials = 10 and prob = 0.3
+    bin_variance(10, 0.3)
+    ## [1] 2.1
+    # mode of distribution with trials = 10 and prob = 0.3
+    bin_mode(10, 0.3)
+    ## [1] 3
+    # skewness of distribution with trials = 10 and prob = 0.3
+    bin_skewness(10, 0.3)
+    ## [1] 0.2760262
+    # kurtosis of distribution with trials = 10 and prob = 0.3
+    bin_kurtosis(10, 0.3)
+    ## [1] -0.1238095
