@@ -91,14 +91,12 @@ dist
 #> 4       3     0.31250
 #> 5       4     0.15625
 #> 6       5     0.03125
-```
 
-``` r
 # binomial ditribution plot
 plot(dist)
 ```
 
-<img src="README-unnamed-chunk-3-1.png" width="100%" />
+![](README-unnamed-chunk-2-1.png)
 
     #>      [,1]
     #> [1,]  0.7
@@ -108,56 +106,53 @@ plot(dist)
     #> [5,]  5.5
     #> [6,]  6.7
 
-<img src="../binomial/plot1.png" width="80%" style="display: block; margin: auto;" />
+    # binomial cumulative distribution
+    cum <- bin_cumulative(trials = 5, prob = 0.5)
+    cum
+    #>   success probability cumulative
+    #> 1       0     0.03125    0.03125
+    #> 2       1     0.15625    0.18750
+    #> 3       2     0.31250    0.50000
+    #> 4       3     0.31250    0.81250
+    #> 5       4     0.15625    0.96875
+    #> 6       5     0.03125    1.00000
+
+
+    # binomial cumulative distribution plot
+    plot(cum)
+
+![](README-unnamed-chunk-2-2.png)
 
 ``` r
-# binomial cumulative distribution
-cum <- bin_cumulative(trials = 5, prob = 0.5)
-cum
-#>   success probability cumualtive
-#> 1       0     0.03125    0.03125
-#> 2       1     0.15625    0.18750
-#> 3       2     0.31250    0.50000
-#> 4       3     0.31250    0.81250
-#> 5       4     0.15625    0.96875
-#> 6       5     0.03125    1.00000
 
 
-# binomial cumulative distribution plot
-plot(cum)
+# binomial random variable summary statistics
+bin1 <- bin_variable(trials = 10, p = 0.3) 
+binsum1 <- summary(bin1) 
+binsum1
+#> "Summary Binomial" 
+#> 
+#> Parameters 
+#> - number of trials: 10 
+#> - prob of success : 0.3 
+#> 
+#> Measures 
+#> - mean    : 3 
+#> - variance: 2.1 
+#> - mode    : 3 
+#> - skewness: 0.2760262 
+#> - kurtosis: -0.1238095
+
+
+# summary measures
+bin_mean(10, 0.3) 
+#> [1] 3
+bin_variance(10, 0.3) 
+#> [1] 2.1
+bin_mode(10, 0.3) 
+#> [1] 3
+bin_skewness(10, 0.3) 
+#> [1] 0.2760262
+bin_kurtosis(10, 0.3) 
+#> [1] -0.1238095
 ```
-
-<img src="README-unnamed-chunk-5-1.png" width="100%" />
-
-    #> NULL
-
-
-    # binomial random variable summary statistics
-    bin1 <- bin_variable(trials = 10, p = 0.3) 
-    binsum1 <- summary(bin1) 
-    binsum1
-    #> "Summary Binomial" 
-    #> 
-    #> Parameters 
-    #> - number of trials: 10 
-    #> - prob of success : 0.3 
-    #> 
-    #> Measures 
-    #> - mean    : 3 
-    #> - variance: 2.1 
-    #> - mode    : 3 
-    #> - skewness: 0.2760262 
-    #> - kurtosis: -0.1238095
-
-
-    # summary measures
-    bin_mean(10, 0.3) 
-    #> [1] 3
-    bin_variance(10, 0.3) 
-    #> [1] 2.1
-    bin_mode(10, 0.3) 
-    #> [1] 3
-    bin_skewness(10, 0.3) 
-    #> [1] 0.2760262
-    bin_kurtosis(10, 0.3) 
-    #> [1] -0.1238095
