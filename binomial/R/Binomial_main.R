@@ -98,6 +98,7 @@ plot.bincum <- function(x, ...){
 }
 
 
+
 #' @title bin_variable
 #' @description list the class binomial random variable with the named of trials and prob
 #' @param trials number of trials
