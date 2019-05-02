@@ -106,26 +106,31 @@ plot(dist)
     #> [5,]  5.5
     #> [6,]  6.7
 
-    # binomial cumulative distribution
-    cum <- bin_cumulative(trials = 5, prob = 0.5)
-    cum
-    #>   success probability cumulative
-    #> 1       0     0.03125    0.03125
-    #> 2       1     0.15625    0.18750
-    #> 3       2     0.31250    0.50000
-    #> 4       3     0.31250    0.81250
-    #> 5       4     0.15625    0.96875
-    #> 6       5     0.03125    1.00000
-
-
-    # binomial cumulative distribution plot
-    plot(cum)
-
-![](README-unnamed-chunk-2-2.png)
+<img src="../images/plot.1.jpg" width="80%" style="display: block; margin: auto;" />
 
 ``` r
+# binomial cumulative distribution
+cum <- bin_cumulative(trials = 5, prob = 0.5)
+cum
+#>   success probability cumulative
+#> 1       0     0.03125    0.03125
+#> 2       1     0.15625    0.18750
+#> 3       2     0.31250    0.50000
+#> 4       3     0.31250    0.81250
+#> 5       4     0.15625    0.96875
+#> 6       5     0.03125    1.00000
+```
 
+``` r
+# binomial cumulative distribution plot
+plot(cum)
+```
 
+![](README-unnamed-chunk-5-1.png)
+
+<img src="../images/plot.2.jpg" width="80%" style="display: block; margin: auto;" />
+
+``` r
 # binomial random variable summary statistics
 bin1 <- bin_variable(trials = 10, p = 0.3) 
 binsum1 <- summary(bin1) 
