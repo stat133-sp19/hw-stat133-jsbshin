@@ -15,11 +15,37 @@ library(binomial)
 ```
 
 ## Binomial Distribution
-The binomial distribution is the most famous probability distribution among discrete random variables. 
-The pakage "binomial" perform the functions to calculate the probabilities about the number of successes in a fixed number of random identical trials and also calculate related properties of binomial random variable.
+
+The binomial distribution is the most famous probability distribution among discrete random variables.
+
+The pakage "binomial" perform the functions to calculate the probabilities about the number of successes in a fixed number of random identical trials.
+
+And this package also calculate related properties of binomial random variable.
+
+
+## characteristic of Binomial Variable
+
+1. Valid input for the 'prob' is a number between 0 and 1. 
+
+2. Valid input fot the 'trials' is a non-negative integer number.
+
+3. Valid input for the 'success' is a number of integer greater than or equal to 0 and less than or equal to the number of trials.
+
+If ypu put invalid input, you get an error message.
 
 
 
+## Binomial Functions
 
+### Creating Binomial Variable
 
+To create a binomail object, you can use 'bin_variable()' function.
 
+For example, you are tossing a fair coin 5 times.
+
+```{r}
+
+coin <- bin_variable(5, 0.5)
+coin
+
+```
