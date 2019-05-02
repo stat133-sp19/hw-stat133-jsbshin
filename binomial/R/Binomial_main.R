@@ -64,10 +64,9 @@ bin_distribution <- function(trials, prob) {
 
 #' @export
 plot.bindis <- function(x, ...){
-  b <-  barplot(x$probability, xlab = "success",
+ barplot(x$probability, xlab = "success",
                 ylab ="probability",names.arg = x$success,
                 border = NA, las = 1)
-  return(b)
 }
 
 
