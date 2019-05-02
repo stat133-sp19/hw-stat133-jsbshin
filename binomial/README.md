@@ -96,7 +96,17 @@ dist
 plot(dist)
 ```
 
-<img src="binomial/images/plot.1.png" width="80%" style="display: block; margin: auto;" />
+![](README-unnamed-chunk-2-1.png)
+
+    #>      [,1]
+    #> [1,]  0.7
+    #> [2,]  1.9
+    #> [3,]  3.1
+    #> [4,]  4.3
+    #> [5,]  5.5
+    #> [6,]  6.7
+
+<img src="images/plot1.png" width="80%" style="display: block; margin: auto;" />
 
 ``` r
 # binomial cumulative distribution
@@ -116,7 +126,9 @@ cum
 plot(cum)
 ```
 
-<img src="../binomial/plot.2.png" width="80%" style="display: block; margin: auto;" />
+![](README-unnamed-chunk-5-1.png)
+
+<img src="images/plot2.png" width="80%" style="display: block; margin: auto;" />
 
 ``` r
 # binomial random variable summary statistics
