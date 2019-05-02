@@ -97,7 +97,7 @@ dist
 plot(dist)
 ```
 
-![](README-unnamed-chunk-2-1.png)
+<img src="README-unnamed-chunk-2-1.png" width="100%" />
 
     #>      [,1]
     #> [1,]  0.7
@@ -122,7 +122,7 @@ plot(dist)
     # binomial cumulative distribution plot
     plot(cum)
 
-![](README-unnamed-chunk-2-2.png)
+<img src="README-unnamed-chunk-2-2.png" width="100%" />
 
     #> NULL
 
