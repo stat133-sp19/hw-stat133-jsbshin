@@ -98,7 +98,7 @@ plot(dist)
 
 ![](README-unnamed-chunk-2-1.png)
 
-<img src="vignettes/introduction_files/figure-html/unnamed-chunk-6-1.png" width="80%" style="display: block; margin: auto;" />
+<img src="images/plo1.png" width="70%" style="display: block; margin: auto;" />
 
 ``` r
 # binomial cumulative distribution
@@ -120,7 +120,7 @@ plot(cum)
 
 ![](README-unnamed-chunk-5-1.png)
 
-<img src="images/plot2.png" width="80%" style="display: block; margin: auto;" />
+<img src="vignettes/introduction_files/figure-html/unnamed-chunk-8-1" width="80%" style="display: block; margin: auto;" />
 
 ``` r
 # binomial random variable summary statistics
