@@ -83,8 +83,8 @@ plot.bindis <- function(x, ...){
 bin_cumulative <- function(trials, prob) {
   success <- 0:trials
   probability <- bin_probability(0:trials, trials, prob)
-  cumualtive <- cumsum(probability)
-  data <- data.frame(success, probability, cumualtive)
+  cumulative <- cumsum(probability)
+  data <- data.frame(success, probability, cumulative)
   class(data) <- c("bincum", "data.frame")
   return(data)
 }
@@ -92,9 +92,8 @@ bin_cumulative <- function(trials, prob) {
 
 #' @export
 plot.bincum <- function(x, ...){
-  g <-plot(x$success, x$cumualtive, type = 'o',
+  plot(x$success, x$cumulative, type = 'o',
            xlab = "success", ylab = "probability", las = 1)
-  return(g)
 }
 
 
