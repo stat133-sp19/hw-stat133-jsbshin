@@ -44,8 +44,138 @@ To create a binomail object, you can use 'bin_variable()' function.
 For example, you are tossing a fair coin 5 times.
 
 ```{r}
-
 coin <- bin_variable(5, 0.5)
 coin
+```
 
+### bin_choose()
+
+The 'bin_choose()' function takes input of success and trials to calculate the number of combination in which 'k' successes in 'n' trials. 
+
+```{r}
+bin_choose(n = 5, k = 3)
+bin_choose(n = 5, k = 0)
+bin_choose(n = 5, k = 0:3)
+```
+
+
+###bin_probability()
+
+The 'bin_probability()' function takes input of success, trials, prob to calculate the probability of getting k successes in n trials for a binomial random variable.
+
+```{r}
+bin_probability(success = 2, trials = 5, prob = 0.5 )
+bin_probability(success = 0:2, trials = 5, prob = 0.5)
+bin_probability(55, 100, 0.45)
+```
+
+
+###bin_distribution()
+
+The 'bin_distribution()' function takes input of trials, prob to list the probabality of each successe with probability p in n trials
+
+```{r}
+dist <- bin_distribution(trials = 5, prob = 0.5)
+dist
+```
+
+###plot.bindis()
+
+The function 'plot.bindis()' graphs a barplot to display the probability histogram of a binomial distribution.
+
+
+```{r}
+dist <- bin_distribution(trials = 5, prob = 0.5)
+plot(dist)
+```
+
+  
+
+###bin_cumulative
+
+The function 'bin_cumulative' list the cumulative probabality of each successe with probability p in n trials.
+
+```{r}
+cum <- bin_cumulative(trials = 5, prob = 0.5)
+cum
+```
+
+
+###plot.bincum()
+
+The function 'plot.bincum()' graphs the cumulative distribution.
+
+```{r}
+
+cum <- bin_cumulative(trials = 5, prob = 0.5)
+plot(cum)
+
+```
+
+
+
+###summary of the binomial variable
+
+Use `summary()` to get a full summary of description of a binomial variable object
+
+```{r}
+bin1 <- bin_variable(trials = 10, p = 0.3) 
+binsum1 <- summary(bin1) 
+binsum1
+
+```
+
+##Functions of measure
+
+###bin_mean()
+
+The function "bin_mean()" gives expected value of object.
+
+```{r}
+mean <- bin_mean(10, 0.3)
+mean
+```
+
+
+
+###bin_variance()
+
+The function "bin_variance()" gives the variance of a binomal distribution.
+
+```{r}
+var <- bin_variance(10, 0.3)
+var
+```
+
+
+
+###bin_mode()
+
+The function "bin_mode()" gives the mode of a binomal distribution.
+
+```{r}
+mode <- bin_mode(10, 0.3)
+mode
+```
+
+
+
+###bin_skewness()
+
+The function "bin_skewness()" gives the skewness of a binomal distribution.
+
+```{r}
+skewness <- bin_skewness(10, 0.3)
+skewness
+```
+
+
+
+###bin_kurtosis()
+
+The function "bin_kurtosis()" gives the kurtosis of a binomal distribution.
+
+```{r}
+kurtosis <- bin_kurtosis(10, 0.3)
+kurtosis
 ```
