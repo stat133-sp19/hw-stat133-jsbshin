@@ -106,7 +106,7 @@ plot(dist)
     #> [5,]  5.5
     #> [6,]  6.7
 
-<img src="../images/plot.1.jpg" width="80%" style="display: block; margin: auto;" />
+<img src="../images/plot.1.png" width="80%" style="display: block; margin: auto;" />
 
 ``` r
 # binomial cumulative distribution
@@ -128,7 +128,7 @@ plot(cum)
 
 ![](README-unnamed-chunk-5-1.png)
 
-<img src="../images/plot.2.jpg" width="80%" style="display: block; margin: auto;" />
+<img src="../images/plot.2.png" width="80%" style="display: block; margin: auto;" />
 
 ``` r
 # binomial random variable summary statistics
