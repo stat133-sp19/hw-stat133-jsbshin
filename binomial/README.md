@@ -91,13 +91,14 @@ dist
 #> 4       3     0.31250
 #> 5       4     0.15625
 #> 6       5     0.03125
+```
 
-
+``` r
 # binomial ditribution plot
 plot(dist)
 ```
 
-<img src="README-unnamed-chunk-2-1.png" width="100%" />
+<img src="README-unnamed-chunk-3-1.png" width="100%" />
 
     #>      [,1]
     #> [1,]  0.7
@@ -107,22 +108,24 @@ plot(dist)
     #> [5,]  5.5
     #> [6,]  6.7
 
-    # binomial cumulative distribution
-    cum <- bin_cumulative(trials = 5, prob = 0.5)
-    cum
-    #>   success probability cumualtive
-    #> 1       0     0.03125    0.03125
-    #> 2       1     0.15625    0.18750
-    #> 3       2     0.31250    0.50000
-    #> 4       3     0.31250    0.81250
-    #> 5       4     0.15625    0.96875
-    #> 6       5     0.03125    1.00000
+``` r
+# binomial cumulative distribution
+cum <- bin_cumulative(trials = 5, prob = 0.5)
+cum
+#>   success probability cumualtive
+#> 1       0     0.03125    0.03125
+#> 2       1     0.15625    0.18750
+#> 3       2     0.31250    0.50000
+#> 4       3     0.31250    0.81250
+#> 5       4     0.15625    0.96875
+#> 6       5     0.03125    1.00000
 
 
-    # binomial cumulative distribution plot
-    plot(cum)
+# binomial cumulative distribution plot
+plot(cum)
+```
 
-<img src="README-unnamed-chunk-2-2.png" width="100%" />
+<img src="README-unnamed-chunk-4-1.png" width="100%" />
 
     #> NULL
 
