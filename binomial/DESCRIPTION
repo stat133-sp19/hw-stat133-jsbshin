@@ -2,12 +2,15 @@ Package: binomial
 Type: Package
 Title: Calculations of a Binomial random variable
 Version: 0.1.0
-Author: Soo Young Shin
-Maintainer: Soo Young Shin <bhyyshin@berkeley.edu>
+Authors@R: person("Sooyoung", "Shin", email = "bhyyshin@berkeley.edu", role = c("aut", "cre"))
 Description: Function for calculating probabilities of Binomail random variable,
     and realted calcuation, mean, variance, probability distribution, etc.
 License: GPL-2
 Encoding: UTF-8
+Collate:
+    Binomial_main.R
+    private_auxiliary.R
+    private_checker.R
 LazyData: true
 Suggests: 
     testthat,
