@@ -96,15 +96,6 @@ dist
 plot(dist)
 ```
 
-![](README-unnamed-chunk-2-1.png)
-
-    #>      [,1]
-    #> [1,]  0.7
-    #> [2,]  1.9
-    #> [3,]  3.1
-    #> [4,]  4.3
-    #> [5,]  5.5
-    #> [6,]  6.7
 
 <img src="images/plot1.png" width="80%" style="display: block; margin: auto;" />
 
@@ -126,7 +117,7 @@ cum
 plot(cum)
 ```
 
-![](README-unnamed-chunk-5-1.png)
+
 
 <img src="images/plot2.png" width="80%" style="display: block; margin: auto;" />
 
