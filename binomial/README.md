@@ -1,14 +1,4 @@
 
-------------------------------------------------------------------------
-
-output:
-
-github\_document:
-
-    html_preview: false
-
-------------------------------------------------------------------------
-
 Overview
 --------
 
@@ -16,8 +6,6 @@ Overview
 
 -   `bin_choose()` calculates the number of combinations in which `"k"` success can occur in `"n"` trials
 
--   `toss()` tosses a coin object, producing a `"toss"` object.
+-   `bin_probability()` caculates the binomial probability of `"k"` success in `"n"` trials given `"p"` probability
 
--   `plot()` method for a `"toss"` object to plot frequencies of heads.
-
--   `summary()` method for a `"toss"` object.
+-   `bin_distribution()` list the probabality of each successe with probability `"p"` in `"n"` trials
