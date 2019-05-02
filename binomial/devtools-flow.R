@@ -1,5 +1,6 @@
 # =====================================================
 # Devtools workflow
+#library(devtools)
 # =====================================================
 
 devtools::document()          # generate documentation
